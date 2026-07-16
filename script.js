@@ -25,27 +25,25 @@ const stackContent = {
         body: "Construcción de rutas, validaciones, lectura y escritura de datos, y separación de responsabilidades para mantener el código claro.",
         tags: ["Python", "Flask", "JSON", "Validaciones"]
     },
-    frontend: {
-        title: "Interfaces web",
-        body: "Maquetación responsive, páginas limpias, componentes reutilizables y experiencia visual consistente para presentar proyectos.",
-        tags: ["HTML", "CSS", "Bootstrap", "Responsive"]
+    tools: {
+        title: "Herramientas de trabajo",
+        body: "Uso Git para organizar avances, GitHub para documentar proyectos y Office para tareas operativas, reportes y seguimiento.",
+        tags: ["Git", "GitHub", "Office", "Documentación"]
     },
-    workflow: {
-        title: "Flujo de trabajo",
-        body: "Uso de GitHub para publicar repositorios, documentar proyectos y convertir avances técnicos en evidencia visible.",
-        tags: ["Git", "GitHub", "README", "GitHub Pages"]
+    soft: {
+        title: "Habilidades de equipo",
+        body: "Mi experiencia liderando operación y atención al cliente me ha fortalecido en comunicación, adaptabilidad, liderazgo y resolución de problemas.",
+        tags: ["Comunicación", "Liderazgo", "Adaptabilidad", "Customer Service"]
     }
 };
 
 const projectsGrid = document.querySelector("#projectsGrid");
 const filterButtons = document.querySelectorAll(".filter-button");
-const stackButtons = document.querySelectorAll(".stack-item");
+const stackButtons = document.querySelectorAll(".stack-tab");
 const stackDetail = document.querySelector("#stackDetail");
 const projectDialog = document.querySelector("#projectDialog");
 const dialogContent = document.querySelector("#dialogContent");
 const dialogClose = document.querySelector("#dialogClose");
-const themeToggle = document.querySelector("#themeToggle");
-const typedRole = document.querySelector("#typedRole");
 const navLinks = document.querySelectorAll(".nav-link");
 const revealItems = document.querySelectorAll("[data-reveal]");
 const sections = document.querySelectorAll("[data-section]");
@@ -73,7 +71,7 @@ function renderProjects(filter = "todos") {
                 .join("");
 
             const demoLink = project.demo
-                ? `<a class="button small ghost" href="${project.demo}" target="_blank" rel="noreferrer">Demo</a>`
+                ? `<a class="button small secondary" href="${project.demo}" target="_blank" rel="noreferrer">Demo</a>`
                 : "";
 
             return `
@@ -88,7 +86,7 @@ function renderProjects(filter = "todos") {
                         <div class="project-links">
                             <a class="button small primary" href="${project.repo}" target="_blank" rel="noreferrer">Repositorio</a>
                             ${demoLink}
-                            <button class="button small ghost detail-button" type="button" data-project="${index}">Detalles</button>
+                            <button class="button small secondary detail-button" type="button" data-project="${index}">Detalles</button>
                         </div>
                     </div>
                 </article>
@@ -146,36 +144,6 @@ projectDialog.addEventListener("click", (event) => {
     }
 });
 
-themeToggle.addEventListener("click", () => {
-    document.body.classList.toggle("light-mode");
-    const isLight = document.body.classList.contains("light-mode");
-    themeToggle.querySelector(".toggle-label").textContent = isLight ? "Noche" : "Luz";
-});
-
-const rolePhrases = ["Python + Flask", "Interfaces limpias", "GitHub Pages", "Proyectos funcionales"];
-let phraseIndex = 0;
-let letterIndex = 0;
-let deleting = false;
-
-function typeRole() {
-    const phrase = rolePhrases[phraseIndex];
-    typedRole.textContent = phrase.slice(0, letterIndex);
-
-    if (!deleting && letterIndex < phrase.length) {
-        letterIndex += 1;
-    } else if (deleting && letterIndex > 0) {
-        letterIndex -= 1;
-    } else {
-        deleting = !deleting;
-        if (!deleting) {
-            phraseIndex = (phraseIndex + 1) % rolePhrases.length;
-        }
-    }
-
-    const delay = deleting ? 46 : letterIndex === phrase.length ? 1200 : 82;
-    window.setTimeout(typeRole, delay);
-}
-
 const revealObserver = new IntersectionObserver(
     (entries) => {
         entries.forEach((entry) => {
@@ -209,4 +177,3 @@ sections.forEach((section) => sectionObserver.observe(section));
 
 renderStack();
 renderProjects();
-typeRole();
