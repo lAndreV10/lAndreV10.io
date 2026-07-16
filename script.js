@@ -4,17 +4,17 @@ const projects = [
         category: ["python", "web"],
         image: "assets/reservapro-preview.png",
         description:
-            "Sistema de gestión de citas para negocios. Permite crear, consultar y cancelar reservas desde una interfaz web con Flask y una versión CLI.",
+            "Proyecto para practicar gestión de citas. Permite crear, consultar y cancelar reservas desde una interfaz web con Flask y una versión CLI.",
         technologies: ["Python", "Flask", "Bootstrap", "Jinja", "JSON"],
         repo: "https://github.com/lAndreV10/ReservaPro_CLI",
         demo: "",
         detail:
-            "ReservaPro organiza el flujo completo de una cita: creación, consulta por fecha y cancelación. El proyecto separa rutas web, interfaz CLI, lógica de negocio y persistencia local.",
+            "ReservaPro me sirvió para practicar rutas, formularios, validaciones y guardado de datos. Tiene una versión web con Flask y otra versión para usar desde consola.",
         highlights: [
-            "Aplicación web con Flask y plantillas Jinja.",
-            "Versión CLI para operar desde consola.",
-            "Validación de fecha y hora antes de guardar datos.",
-            "Persistencia local en archivo JSON."
+            "Rutas web con Flask y plantillas Jinja.",
+            "Versión CLI para practicar lógica desde consola.",
+            "Validación básica de fecha y hora.",
+            "Datos guardados en archivo JSON."
         ]
     }
 ];
@@ -22,17 +22,17 @@ const projects = [
 const stackContent = {
     backend: {
         title: "Backend con Python",
-        body: "Construcción de rutas, validaciones, lectura y escritura de datos, y separación de responsabilidades para mantener el código claro.",
+        body: "Estoy practicando rutas, formularios, validaciones y lectura de datos. Mi meta es escribir código claro antes de hacerlo más grande.",
         tags: ["Python", "Flask", "JSON", "Validaciones"]
     },
     languages: {
-        title: "Lenguajes y bases",
-        body: "Estoy fortaleciendo mi base con Python, Java y SQL, aplicando lógica de programación en proyectos pequeños pero funcionales.",
+        title: "Lenguajes que uso",
+        body: "Python es el lenguaje que más uso por ahora. También sigo practicando Java y SQL para fortalecer mi lógica y manejo de datos.",
         tags: ["Python", "Java", "SQL", "Lógica"]
     },
     tools: {
-        title: "Herramientas técnicas",
-        body: "Uso Git para organizar avances, documentar proyectos y mantener un historial claro de lo que voy construyendo.",
+        title: "Herramientas de trabajo",
+        body: "Uso Git para guardar avances, revisar cambios y documentar mejor lo que voy aprendiendo en cada proyecto.",
         tags: ["Git", "README", "Documentación", "Control de versiones"]
     }
 };
@@ -84,7 +84,7 @@ function renderProjects(filter = "todos") {
                         <h3>${project.title}</h3>
                         <p>${project.description}</p>
                         <div class="project-links">
-                            <a class="button small primary" href="${project.repo}" target="_blank" rel="noreferrer">Repositorio</a>
+                            <a class="button small primary" href="${project.repo}" target="_blank" rel="noreferrer">Ver código</a>
                             ${demoLink}
                             <button class="button small secondary detail-button" type="button" data-project="${index}">Detalles</button>
                         </div>
@@ -105,7 +105,7 @@ function openProjectDialog(index) {
         <p>${project.detail}</p>
         <ul>${highlights}</ul>
         <div class="project-links">
-            <a class="button small primary" href="${project.repo}" target="_blank" rel="noreferrer">Abrir repositorio</a>
+            <a class="button small primary" href="${project.repo}" target="_blank" rel="noreferrer">Ver código</a>
         </div>
     `;
 
