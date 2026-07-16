@@ -21,19 +21,19 @@ const projects = [
 
 const stackContent = {
     backend: {
-        title: "backend.py",
-        body: "Me concentro en entender la lógica detrás de los servidores: creación de rutas (endpoints), validación de parámetros, manejo de sesiones y diseño de flujos de datos estructurados.",
+        title: "Backend",
+        body: "Me concentro en entender la lógica detrás de los servidores: creación de rutas (endpoints), validación de parámetros y diseño de flujos de datos estructurados.",
         tags: ["Python", "Flask", "JSON", "APIs", "HTTP"]
     },
     languages: {
-        title: "languages.json",
-        body: "Uso Python para scripts y lógica backend. Utilizo Java para comprender la programación orientada a objetos en mis clases universitarias, y SQL para el diseño relacional e integridad de datos.",
-        tags: ["Python", "Java", "SQL", "OOP"]
+        title: "Lenguajes",
+        body: "Uso Python para lógica backend y scripts. Utilizo Java para comprender la programación orientada a objetos, y SQL para el diseño relacional de bases de datos.",
+        tags: ["Python", "Java", "SQL", "POO"]
     },
     tools: {
-        title: "tools.sh",
-        body: "Empleo Git en todos mis repositorios para control de versiones estructurado. Me esfuerzo por redactar documentación limpia (READMEs) y clara sobre cómo instalar y correr cada proyecto.",
-        tags: ["Git", "GitHub", "CLI", "Markdown"]
+        title: "Herramientas",
+        body: "Empleo Git para el control de versiones de mis proyectos y me esfuerzo por escribir archivos README estructurados con instrucciones claras.",
+        tags: ["Git", "GitHub", "Markdown"]
     }
 };
 
