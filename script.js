@@ -25,15 +25,15 @@ const stackContent = {
         body: "Construcción de rutas, validaciones, lectura y escritura de datos, y separación de responsabilidades para mantener el código claro.",
         tags: ["Python", "Flask", "JSON", "Validaciones"]
     },
-    tools: {
-        title: "Herramientas de trabajo",
-        body: "Uso Git para organizar avances, GitHub para documentar proyectos y Office para tareas operativas, reportes y seguimiento.",
-        tags: ["Git", "GitHub", "Office", "Documentación"]
+    languages: {
+        title: "Lenguajes y bases",
+        body: "Estoy fortaleciendo mi base con Python, Java y SQL, aplicando lógica de programación en proyectos pequeños pero funcionales.",
+        tags: ["Python", "Java", "SQL", "Lógica"]
     },
-    soft: {
-        title: "Habilidades de equipo",
-        body: "Mi experiencia liderando operación y atención al cliente me ha fortalecido en comunicación, adaptabilidad, liderazgo y resolución de problemas.",
-        tags: ["Comunicación", "Liderazgo", "Adaptabilidad", "Customer Service"]
+    tools: {
+        title: "Herramientas técnicas",
+        body: "Uso Git para organizar avances, documentar proyectos y mantener un historial claro de lo que voy construyendo.",
+        tags: ["Git", "README", "Documentación", "Control de versiones"]
     }
 };
 
