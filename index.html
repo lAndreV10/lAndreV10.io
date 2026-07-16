@@ -3,118 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portafolio y CV de André Vicente: proyectos, habilidades y experiencia en desarrollo de software.">
-    <title>André Vicente | CV y Portafolio</title>
+    <meta name="description" content="CV digital y portafolio de André Vicente, desarrollador enfocado en Python, Flask y soluciones web.">
+    <title>André Vicente | Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="page-grid" aria-hidden="true"></div>
+
     <header class="site-header">
         <a class="brand" href="#inicio" aria-label="Ir al inicio">
             <span class="brand-mark">AV</span>
-            <span>André Vicente</span>
+            <span class="brand-text">André Vicente</span>
         </a>
 
         <nav class="site-nav" aria-label="Navegación principal">
-            <a href="#perfil">Perfil</a>
-            <a href="#habilidades">Habilidades</a>
-            <a href="#proyectos">Proyectos</a>
-            <a href="#contacto">Contacto</a>
+            <a class="nav-link active" href="#inicio">Inicio</a>
+            <a class="nav-link" href="#perfil">Perfil</a>
+            <a class="nav-link" href="#stack">Stack</a>
+            <a class="nav-link" href="#proyectos">Proyectos</a>
+            <a class="nav-link" href="#contacto">Contacto</a>
         </nav>
+
+        <button class="theme-toggle" type="button" id="themeToggle" aria-label="Cambiar modo visual">
+            <span class="toggle-track"><span class="toggle-dot"></span></span>
+            <span class="toggle-label">Luz</span>
+        </button>
     </header>
 
     <main>
-        <section class="hero" id="inicio">
-            <div class="hero-content">
-                <p class="eyebrow">CV digital y portafolio</p>
-                <h1>Desarrollo soluciones web prácticas, claras y orientadas a resolver problemas reales.</h1>
-                <p class="hero-copy">
-                    Soy André Vicente, desarrollador en formación con enfoque en Python, Flask,
-                    interfaces web y organización de proyectos. Este espacio reúne mi CV,
-                    habilidades y proyectos principales.
+        <section class="hero section-shell" id="inicio" data-section>
+            <div class="hero-copy" data-reveal>
+                <p class="eyebrow">CV digital / portfolio</p>
+                <h1>André Vicente</h1>
+                <p class="role-line">
+                    <span>Desarrollador en formación</span>
+                    <span class="role-separator">/</span>
+                    <span id="typedRole">Python + Web</span>
                 </p>
+                <p class="hero-summary">
+                    Construyo proyectos prácticos con estructura clara, interfaces limpias
+                    y lógica pensada para resolver problemas reales.
+                </p>
+
                 <div class="hero-actions">
-                    <a class="button primary" href="#proyectos">Ver proyectos</a>
-                    <a class="button secondary" href="https://github.com/lAndreV10" target="_blank" rel="noreferrer">GitHub</a>
+                    <a class="button primary" href="#proyectos">Explorar proyectos</a>
+                    <a class="button ghost" href="https://github.com/lAndreV10" target="_blank" rel="noreferrer">GitHub</a>
                 </div>
             </div>
 
-            <aside class="hero-panel" aria-label="Resumen profesional">
-                <div class="panel-topline">
-                    <span>Disponible para crecer</span>
-                    <span>2026</span>
+            <aside class="status-panel" aria-label="Estado del portafolio" data-reveal>
+                <div class="panel-header">
+                    <span class="status-dot"></span>
+                    <span>portfolio.status</span>
                 </div>
-                <div class="profile-card">
-                    <img src="assets/reservapro-preview.png" alt="Vista previa visual del proyecto ReservaPro">
+                <div class="terminal-lines" aria-label="Resumen rápido">
+                    <p><span>name</span> André Vicente</p>
+                    <p><span>focus</span> Python, Flask, Web UI</p>
+                    <p><span>featured</span> ReservaPro</p>
+                    <p><span>deploy</span> GitHub Pages</p>
                 </div>
-                <dl class="quick-facts">
-                    <div>
-                        <dt>Enfoque</dt>
-                        <dd>Python + Web</dd>
-                    </div>
-                    <div>
-                        <dt>Proyecto destacado</dt>
-                        <dd>ReservaPro</dd>
-                    </div>
-                    <div>
-                        <dt>Repositorio</dt>
-                        <dd>lAndreV10</dd>
-                    </div>
-                </dl>
             </aside>
         </section>
 
-        <section class="section split-section" id="perfil">
-            <div>
-                <p class="section-kicker">Perfil</p>
-                <h2>Un CV vivo para mostrar lo que construyo.</h2>
+        <section class="metrics-strip" aria-label="Indicadores del portafolio" data-reveal>
+            <article>
+                <strong>01</strong>
+                <span>Proyecto destacado</span>
+            </article>
+            <article>
+                <strong>06</strong>
+                <span>Tecnologías base</span>
+            </article>
+            <article>
+                <strong>100%</strong>
+                <span>Estático y publicable</span>
+            </article>
+        </section>
+
+        <section class="section-shell split-section" id="perfil" data-section>
+            <div class="section-title" data-reveal>
+                <p class="eyebrow">Perfil</p>
+                <h2>Un CV vivo, directo y fácil de actualizar.</h2>
             </div>
-            <div class="section-copy">
+            <div class="profile-copy" data-reveal>
                 <p>
-                    Me interesa crear aplicaciones sencillas de usar, con estructura clara
-                    y código mantenible. Mis proyectos actuales se enfocan en backend con
-                    Python, interfaces web y flujos completos de usuario.
+                    Me enfoco en desarrollar aplicaciones web sencillas de usar, con código
+                    ordenado y una separación clara entre interfaz, lógica y datos.
                 </p>
                 <p>
-                    Este portafolio está pensado para crecer: cada proyecto puede incluir
-                    descripción, tecnologías, enlace al repositorio, demo y aprendizajes.
+                    Este sitio centraliza mi experiencia, habilidades y proyectos para que
+                    cada repositorio tenga contexto, propósito y una ruta clara para revisarlo.
                 </p>
             </div>
         </section>
 
-        <section class="section" id="habilidades">
-            <div class="section-heading">
-                <p class="section-kicker">Habilidades</p>
-                <h2>Tecnologías y áreas de trabajo</h2>
+        <section class="section-shell" id="stack" data-section>
+            <div class="section-title compact" data-reveal>
+                <p class="eyebrow">Stack</p>
+                <h2>Herramientas que ya uso en proyectos reales.</h2>
             </div>
 
-            <div class="skills-grid">
-                <article>
-                    <h3>Backend</h3>
-                    <p>Python, Flask, rutas web, validaciones, archivos JSON y separación de lógica.</p>
-                </article>
-                <article>
-                    <h3>Frontend</h3>
-                    <p>HTML, CSS, Bootstrap, diseño responsive y estructura visual para proyectos web.</p>
-                </article>
-                <article>
-                    <h3>Herramientas</h3>
-                    <p>Git, GitHub, documentación en README y organización de repositorios.</p>
-                </article>
-                <article>
-                    <h3>Producto</h3>
-                    <p>Flujos de usuario, pantallas de consulta, formularios y acciones completas.</p>
-                </article>
+            <div class="stack-board" data-reveal>
+                <button class="stack-item active" type="button" data-stack="backend">
+                    <span>01</span>
+                    Backend
+                </button>
+                <button class="stack-item" type="button" data-stack="frontend">
+                    <span>02</span>
+                    Frontend
+                </button>
+                <button class="stack-item" type="button" data-stack="workflow">
+                    <span>03</span>
+                    Flujo
+                </button>
+                <div class="stack-detail" id="stackDetail" aria-live="polite"></div>
             </div>
         </section>
 
-        <section class="section" id="proyectos">
-            <div class="section-heading with-action">
+        <section class="section-shell projects-section" id="proyectos" data-section>
+            <div class="section-title with-controls" data-reveal>
                 <div>
-                    <p class="section-kicker">Proyectos</p>
-                    <h2>Trabajo destacado</h2>
+                    <p class="eyebrow">Proyectos</p>
+                    <h2>Trabajo seleccionado</h2>
                 </div>
                 <div class="project-filters" aria-label="Filtros de proyectos">
                     <button class="filter-button active" type="button" data-filter="todos">Todos</button>
@@ -123,53 +136,58 @@
                 </div>
             </div>
 
-            <div class="projects-grid" id="projectsGrid"></div>
+            <div class="projects-grid" id="projectsGrid" data-reveal></div>
         </section>
 
-        <section class="section timeline-section">
-            <div class="section-heading">
-                <p class="section-kicker">CV</p>
-                <h2>Resumen profesional</h2>
+        <section class="section-shell cv-section" data-reveal>
+            <div class="section-title compact">
+                <p class="eyebrow">CV</p>
+                <h2>Ruta actual</h2>
             </div>
 
             <div class="timeline">
                 <article>
-                    <span class="timeline-date">Actualidad</span>
-                    <h3>Desarrollo de proyectos de portafolio</h3>
-                    <p>Construcción de aplicaciones con Python, Flask y tecnologías web para practicar soluciones completas.</p>
+                    <span>Ahora</span>
+                    <h3>Portafolio público</h3>
+                    <p>Publicación de proyectos, documentación y evidencia técnica en GitHub Pages.</p>
                 </article>
                 <article>
-                    <span class="timeline-date">Formación</span>
+                    <span>Formación</span>
                     <h3>Universidad Galileo</h3>
-                    <p>Base académica y práctica para fortalecer programación, análisis y desarrollo de software.</p>
+                    <p>Base académica para fortalecer programación, análisis y desarrollo de software.</p>
                 </article>
                 <article>
-                    <span class="timeline-date">Siguiente paso</span>
-                    <h3>Portafolio público en GitHub</h3>
-                    <p>Centralización de proyectos, documentación y evidencia técnica en una página principal.</p>
+                    <span>Práctica</span>
+                    <h3>Aplicaciones funcionales</h3>
+                    <p>Proyectos con rutas, formularios, persistencia local y flujos completos.</p>
                 </article>
             </div>
         </section>
 
-        <section class="contact-section" id="contacto">
+        <section class="section-shell contact-section" id="contacto" data-section data-reveal>
             <div>
-                <p class="section-kicker">Contacto</p>
-                <h2>Conectemos desde mis proyectos.</h2>
+                <p class="eyebrow">Contacto</p>
+                <h2>El siguiente proyecto puede empezar desde aquí.</h2>
                 <p>
-                    Este sitio seguirá creciendo con nuevos repositorios, demos y una versión
-                    descargable del CV.
+                    Puedes revisar mis repositorios, seguir la evolución del portafolio
+                    y conectar mis proyectos con demos o documentación.
                 </p>
             </div>
             <div class="contact-actions">
-                <a class="button primary" href="https://github.com/lAndreV10" target="_blank" rel="noreferrer">GitHub</a>
-                <a class="button secondary" href="#inicio">Volver arriba</a>
+                <a class="button primary" href="https://github.com/lAndreV10" target="_blank" rel="noreferrer">Ver GitHub</a>
+                <a class="button ghost" href="#inicio">Volver arriba</a>
             </div>
         </section>
     </main>
 
+    <dialog class="project-dialog" id="projectDialog" aria-labelledby="dialogTitle">
+        <button class="dialog-close" type="button" id="dialogClose" aria-label="Cerrar detalle">×</button>
+        <div class="dialog-content" id="dialogContent"></div>
+    </dialog>
+
     <footer class="site-footer">
         <span>© 2026 André Vicente</span>
-        <span>Portafolio publicado con GitHub Pages</span>
+        <span>Diseñado para GitHub Pages</span>
     </footer>
 
     <script src="script.js"></script>
