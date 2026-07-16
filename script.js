@@ -4,36 +4,36 @@ const projects = [
         category: ["python", "web"],
         image: "assets/reservapro-preview.png",
         description:
-            "Proyecto para practicar gestión de citas. Permite crear, consultar y cancelar reservas desde una interfaz web con Flask y una versión CLI.",
+            "Sistema de reservas web y CLI creado para practicar enrutamiento de Flask, peticiones HTTP y lógica de backend persistiendo datos localmente.",
         technologies: ["Python", "Flask", "Bootstrap", "Jinja", "JSON"],
         repo: "https://github.com/lAndreV10/ReservaPro_CLI",
         demo: "",
         detail:
-            "ReservaPro me sirvió para practicar rutas, formularios, validaciones y guardado de datos. Tiene una versión web con Flask y otra versión para usar desde consola.",
+            "Este proyecto nació con el fin de conectar una misma lógica de negocio a dos interfaces distintas: una consola de comandos (CLI) y una aplicación web. Me ayudó a comprender el flujo completo de peticiones HTTP, validación de datos en formularios y enrutamiento dinámico en Flask.",
         highlights: [
-            "Rutas web con Flask y plantillas Jinja.",
-            "Versión CLI para practicar lógica desde consola.",
-            "Validación básica de fecha y hora.",
-            "Datos guardados en archivo JSON."
+            "Arquitectura modular que comparte lógica central entre CLI y Web.",
+            "Persistencia local de datos simulando una base de datos mediante archivos JSON.",
+            "Algoritmo de validación de disponibilidad horaria para evitar colisiones.",
+            "Renderizado dinámico de plantillas HTML con Jinja2."
         ]
     }
 ];
 
 const stackContent = {
     backend: {
-        title: "Backend con Python",
-        body: "Estoy practicando rutas, formularios, validaciones y lectura de datos. Mi meta es escribir código claro antes de hacerlo más grande.",
-        tags: ["Python", "Flask", "JSON", "Validaciones"]
+        title: "backend.py",
+        body: "Me concentro en entender la lógica detrás de los servidores: creación de rutas (endpoints), validación de parámetros, manejo de sesiones y diseño de flujos de datos estructurados.",
+        tags: ["Python", "Flask", "JSON", "APIs", "HTTP"]
     },
     languages: {
-        title: "Lenguajes que uso",
-        body: "Python es el lenguaje que más uso por ahora. También sigo practicando Java y SQL para fortalecer mi lógica y manejo de datos.",
-        tags: ["Python", "Java", "SQL", "Lógica"]
+        title: "languages.json",
+        body: "Uso Python para scripts y lógica backend. Utilizo Java para comprender la programación orientada a objetos en mis clases universitarias, y SQL para el diseño relacional e integridad de datos.",
+        tags: ["Python", "Java", "SQL", "OOP"]
     },
     tools: {
-        title: "Herramientas de trabajo",
-        body: "Uso Git para guardar avances, revisar cambios y documentar mejor lo que voy aprendiendo en cada proyecto.",
-        tags: ["Git", "README", "Documentación", "Control de versiones"]
+        title: "tools.sh",
+        body: "Empleo Git en todos mis repositorios para control de versiones estructurado. Me esfuerzo por redactar documentación limpia (READMEs) y clara sobre cómo instalar y correr cada proyecto.",
+        tags: ["Git", "GitHub", "CLI", "Markdown"]
     }
 };
 

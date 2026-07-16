@@ -7,7 +7,7 @@
     <title>André Vicente | Portafolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,8 +15,8 @@
 
     <header class="site-header">
         <a class="brand" href="#inicio" aria-label="Ir al inicio">
-            <span class="brand-mark">AV</span>
-            <span>André Vicente</span>
+            <span class="brand-mark">av_</span>
+            <span>andre.dev</span>
         </a>
 
         <nav class="site-nav" aria-label="Navegación principal">
@@ -26,91 +26,89 @@
             <a class="nav-link" href="#proyectos">Proyectos</a>
             <a class="nav-link" href="#contacto">Contacto</a>
         </nav>
-
     </header>
 
     <main>
         <section class="hero" id="inicio" data-section>
             <div class="hero-inner">
                 <div class="hero-copy" data-reveal>
-                    <p class="eyebrow hero-eyebrow">
-                        <span>Portafolio personal</span>
-                        <span>/</span>
-                        <span>backend en práctica</span>
-                    </p>
+                    <div class="terminal-prompt">
+                        <span class="prompt-user">guest@lAndreV10</span>:<span class="prompt-dir">~</span>$ whoami
+                    </div>
                     <h1>André Vicente</h1>
-                    <p class="hero-role">Estudiante de Ingeniería de Sistemas. Estoy practicando backend con Python, Flask y SQL.</p>
+                    <p class="hero-role">&gt; Estudiante de Ingeniería de Sistemas</p>
                     <p class="hero-summary">
-                        Este portafolio reúne los proyectos que voy construyendo mientras practico.
-                        Todavía estoy en formación, pero trato de dejar cada avance ordenado,
-                        funcional y fácil de explicar.
+                        Hola, soy André. Estudio en la Universidad Galileo y estoy enfocado en el desarrollo backend. 
+                        Me apasiona diseñar bases de datos, escribir rutas lógicas y construir APIs. 
+                        Este portafolio es mi entorno de pruebas donde subo código real y documentado.
                     </p>
-                    <div class="tech-orbit" aria-label="Tecnologías principales">
-                        <span>Python</span>
-                        <span>Java</span>
-                        <span>SQL</span>
-                        <span>Backend</span>
-                        <span>Flask</span>
+                    <div class="terminal-status">
+                        <span class="status-indicator"></span>
+                        <span class="status-text">SYSTEM_STATUS: ACTIVE_LEARNING</span>
                     </div>
                     <div class="hero-actions">
-                        <a class="button primary" href="#proyectos">Ver proyectos</a>
-                        <a class="button secondary" href="#perfil">Conocer perfil</a>
+                        <a class="button primary" href="#proyectos">./ver_proyectos.sh</a>
+                        <a class="button secondary" href="#perfil">cat perfil.md</a>
                     </div>
                 </div>
 
                 <aside class="hero-showcase" aria-label="Proyecto en progreso ReservaPro" data-reveal>
-                    <div class="showcase-scan" aria-hidden="true"></div>
-                    <div class="showcase-label">
-                        <span>Proyecto en progreso</span>
-                        <strong>ReservaPro</strong>
+                    <div class="showcase-header">
+                        <span class="window-dot red"></span>
+                        <span class="window-dot yellow"></span>
+                        <span class="window-dot green"></span>
+                        <span class="window-title">ReservaPro - Preview</span>
                     </div>
-                    <img src="assets/reservapro-preview.png" alt="Vista previa visual del proyecto ReservaPro">
+                    <div class="showcase-image-wrapper">
+                        <img src="assets/reservapro-preview.png" alt="Vista previa visual del proyecto ReservaPro">
+                    </div>
                     <div class="showcase-meta">
-                        <span>Python</span>
-                        <span>Flask</span>
-                        <span>Bootstrap</span>
+                        <span>python</span>
+                        <span>flask</span>
+                        <span>bootstrap</span>
                     </div>
                 </aside>
             </div>
         </section>
 
-        <section class="section band-light" id="perfil" data-section>
+        <section class="section" id="perfil" data-section>
             <div class="section-inner two-column">
                 <div class="section-heading" data-reveal>
                     <span class="section-number">01</span>
                     <p class="eyebrow">Perfil</p>
-                    <h2>Estoy aprendiendo a programar mejor con proyectos pequeños, claros y funcionales.</h2>
+                    <h2>Construyendo bases sólidas a través de la práctica constante y el código abierto.</h2>
                 </div>
                 <div class="profile-panel" data-reveal>
                     <p>
-                        Actualmente estudio Ingeniería de Sistemas en Universidad Galileo.
-                        Uso este espacio para mostrar lo que voy practicando en backend,
-                        lógica de programación y desarrollo web.
+                        Actualmente curso la carrera de Ingeniería de Sistemas en la Universidad Galileo. 
+                        Uso este espacio digital para estructurar y exponer mi evolución en el desarrollo backend,
+                        la arquitectura de bases de datos y la resolución de problemas lógicos.
                     </p>
                     <p>
-                        Me interesa entender cómo se conectan las rutas, formularios,
-                        validaciones y datos dentro de una aplicación. Por ahora mi base
-                        principal está en Python, Java, SQL y Git.
+                        Me interesa comprender a fondo el flujo de datos: desde una petición HTTP en el frontend, 
+                        pasando por la validación de rutas, hasta su almacenamiento persistente en SQL.
                     </p>
-                    <div class="principles-grid">
-                        <article>
-                            <span>Aprendiendo</span>
-                            <strong>Backend y lógica</strong>
-                        </article>
-                        <article>
-                            <span>Practicando</span>
-                            <strong>Python, Java y SQL</strong>
-                        </article>
-                        <article>
-                            <span>Mejorando</span>
-                            <strong>Git y documentación</strong>
-                        </article>
+                    
+                    <div class="code-editor-mock">
+                        <div class="editor-header">
+                            <span class="window-dot red"></span>
+                            <span class="window-dot yellow"></span>
+                            <span class="window-dot green"></span>
+                            <span class="file-name">profile_stats.json</span>
+                        </div>
+                        <div class="editor-body">
+                            <pre><code>{
+  <span class="json-key">"learning"</span>: <span class="json-val">"Backend architecture & routes"</span>,
+  <span class="json-key">"stack"</span>: [<span class="json-val">"Python"</span>, <span class="json-val">"Java"</span>, <span class="json-val">"SQL"</span>],
+  <span class="json-key">"focus"</span>: <span class="json-val">"Git version control & database design"</span>
+}</code></pre>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section band-dark" id="stack" data-section>
+        <section class="section" id="stack" data-section>
             <div class="section-inner">
                 <div class="section-heading centered" data-reveal>
                     <span class="section-number">02</span>
@@ -120,27 +118,27 @@
 
                 <div class="stack-layout" data-reveal>
                     <div class="stack-tabs" role="tablist" aria-label="Áreas técnicas">
-                        <button class="stack-tab active" type="button" data-stack="backend">Backend</button>
-                        <button class="stack-tab" type="button" data-stack="languages">Lenguajes</button>
-                        <button class="stack-tab" type="button" data-stack="tools">Herramientas</button>
+                        <button class="stack-tab active" type="button" data-stack="backend">backend.py</button>
+                        <button class="stack-tab" type="button" data-stack="languages">languages.json</button>
+                        <button class="stack-tab" type="button" data-stack="tools">tools.sh</button>
                     </div>
                     <div class="stack-detail" id="stackDetail" aria-live="polite"></div>
                 </div>
             </div>
         </section>
 
-        <section class="section band-light" id="proyectos" data-section>
+        <section class="section" id="proyectos" data-section>
             <div class="section-inner">
                 <div class="section-heading with-controls" data-reveal>
                     <div>
                         <span class="section-number">03</span>
                         <p class="eyebrow">Proyectos</p>
-                        <h2>Proyectos que estoy armando</h2>
+                        <h2>Proyectos destacados</h2>
                     </div>
                     <div class="project-filters" aria-label="Filtros de proyectos">
-                        <button class="filter-button active" type="button" data-filter="todos">Todos</button>
-                        <button class="filter-button" type="button" data-filter="web">Web</button>
-                        <button class="filter-button" type="button" data-filter="python">Python</button>
+                        <button class="filter-button active" type="button" data-filter="todos">--all</button>
+                        <button class="filter-button" type="button" data-filter="web">--web</button>
+                        <button class="filter-button" type="button" data-filter="python">--python</button>
                     </div>
                 </div>
 
@@ -148,34 +146,50 @@
             </div>
         </section>
 
-        <section class="section band-dark cv-section" data-section>
+        <section class="section cv-section" data-section>
             <div class="section-inner">
                 <div class="section-heading centered" data-reveal>
                     <span class="section-number">04</span>
-                    <p class="eyebrow">CV técnico</p>
-                    <h2>Formación y avances técnicos</h2>
+                    <p class="eyebrow">Historial Git</p>
+                    <h2>git log --oneline</h2>
                 </div>
-                <div class="timeline" data-reveal>
-                    <article>
-                        <span>2022 - Actual</span>
+                <div class="timeline git-log" data-reveal>
+                    <div class="git-commit">
+                        <div class="commit-dot"></div>
+                        <div class="commit-meta">
+                            <span class="commit-hash">commit f4a99e0</span>
+                            <span class="commit-date">2022 - Presente</span>
+                        </div>
                         <h3>Universidad Galileo</h3>
-                        <p>Ingeniería de Sistemas, Informática y Ciencias de la Computación.</p>
-                    </article>
-                    <article>
-                        <span>Práctica</span>
+                        <p>Estudiante de Ingeniería de Sistemas, Informática y Ciencias de la Computación.</p>
+                    </div>
+                    <div class="git-commit">
+                        <div class="commit-dot"></div>
+                        <div class="commit-meta">
+                            <span class="commit-hash">commit 8c3e10b</span>
+                            <span class="commit-date">Práctica</span>
+                        </div>
                         <h3>Backend con Python</h3>
-                        <p>Rutas, formularios, validaciones y guardado de datos en proyectos pequeños.</p>
-                    </article>
-                    <article>
-                        <span>Habilidades</span>
+                        <p>Creación de rutas lógicas, manejo de peticiones HTTP, y persistencia de datos en JSON.</p>
+                    </div>
+                    <div class="git-commit">
+                        <div class="commit-dot"></div>
+                        <div class="commit-meta">
+                            <span class="commit-hash">commit 2d7b8a1</span>
+                            <span class="commit-date">Habilidades</span>
+                        </div>
                         <h3>Base de programación</h3>
-                        <p>Python, Java, SQL, Git, lógica de programación y desarrollo backend.</p>
-                    </article>
-                    <article>
-                        <span>Portafolio</span>
-                        <h3>Avances visibles</h3>
-                        <p>Estoy subiendo proyectos para mostrar mi proceso y mejorar mi código.</p>
-                    </article>
+                        <p>Python, Java, bases de datos (SQL), control de versiones con Git y lógica algorítmica.</p>
+                    </div>
+                    <div class="git-commit">
+                        <div class="commit-dot"></div>
+                        <div class="commit-meta">
+                            <span class="commit-hash">commit 0a5e2f9</span>
+                            <span class="commit-date">Portafolio</span>
+                        </div>
+                        <h3>lAndreV10.io</h3>
+                        <p>Despliegue y documentación de proyectos personales para visibilizar el avance técnico.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -183,11 +197,12 @@
         <section class="contact-section" id="contacto" data-section data-reveal>
             <div>
                 <p class="eyebrow">Contacto</p>
-                <h2>Revisa mis proyectos y los avances que voy sumando.</h2>
+                <h2>$ cat info_contacto.txt</h2>
+                <p class="contact-subtext">¿Quieres revisar mi código o conectar conmigo? Accede directamente a mis repositorios de GitHub.</p>
             </div>
             <div class="contact-actions">
-                <a class="button primary" href="https://github.com/lAndreV10" target="_blank" rel="noreferrer">Ver repositorios</a>
-                <a class="button secondary dark" href="#inicio">Volver arriba</a>
+                <a class="button primary" href="https://github.com/lAndreV10" target="_blank" rel="noreferrer">./abrir_github.sh</a>
+                <a class="button secondary" href="#inicio">./volver_inicio.py</a>
             </div>
         </section>
     </main>
