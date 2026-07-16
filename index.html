@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="ambient-grid" aria-hidden="true"></div>
+
     <header class="site-header">
         <a class="brand" href="#inicio" aria-label="Ir al inicio">
             <span class="brand-mark">AV</span>
@@ -31,13 +33,24 @@
         <section class="hero" id="inicio" data-section>
             <div class="hero-inner">
                 <div class="hero-copy" data-reveal>
-                    <p class="eyebrow">CV digital / portafolio</p>
+                    <p class="eyebrow hero-eyebrow">
+                        <span>CV digital</span>
+                        <span>/</span>
+                        <span>portafolio</span>
+                    </p>
                     <h1>André Vicente</h1>
                     <p class="hero-role">Ingeniero en software en formación, con enfoque en backend y resolución de problemas.</p>
                     <p class="hero-summary">
                         Estoy construyendo mi base técnica con proyectos en Python, backend
                         y desarrollo web, aplicando lógica de programación a soluciones prácticas.
                     </p>
+                    <div class="tech-orbit" aria-label="Tecnologías principales">
+                        <span>Python</span>
+                        <span>Java</span>
+                        <span>SQL</span>
+                        <span>Backend</span>
+                        <span>Flask</span>
+                    </div>
                     <div class="hero-actions">
                         <a class="button primary" href="#proyectos">Ver proyectos</a>
                         <a class="button secondary" href="#perfil">Conocer perfil</a>
@@ -45,6 +58,7 @@
                 </div>
 
                 <aside class="hero-showcase" aria-label="Proyecto destacado ReservaPro" data-reveal>
+                    <div class="showcase-scan" aria-hidden="true"></div>
                     <div class="showcase-label">
                         <span>Proyecto destacado</span>
                         <strong>ReservaPro</strong>
