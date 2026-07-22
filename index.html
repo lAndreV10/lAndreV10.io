@@ -72,28 +72,113 @@
                 </div>
             </div>
             <div class="skills-panel" id="stack">
-                <p class="code-file"><span class="terminal">$</span class="path"> cat stack.actual</p>
+                <p class="code-file"><span class="terminal">$</span> cat stack.actual</p>
                 <p class="skills-title">Stack actual</p>
                 <dl class="skills-list">
                     <div>
                         <dt>Programo con</dt>
-                        <dd>Java, Python y SQL</dd>
+                        <dd>Java, Python, SQL y TypeScript</dd>
                     </div>
                     <div>
-                        <dt>Control de versiones</dt>
+                        <dt>Backend</dt>
+                        <dd>Node.js, Express y Prisma</dd>
+                    </div>
+                    <div>
+                        <dt>Bases de datos</dt>
+                        <dd>PostgreSQL y SQL</dd>
+                    </div>
+                    <div>
+                        <dt>Herramientas</dt>
                         <dd>Git y GitHub</dd>
-                    </div>
-                    <div>
-                        <dt>En práctica</dt>
-                        <dd>Lógica, POO y bases de datos</dd>
-                    </div>
-                    <div>
-                        <dt>También aporto</dt>
-                        <dd>Comunicación y liderazgo</dd>
                     </div>
                 </dl>
             </div>
         </section>
+
+        <section id="proyectos">
+            <h2><span class="verde">// </span>ls ./proyectos</h2>
+            
+            <div class="projects">
+                <article class="project-showcase">
+                    <figure class="project-preview">
+                        <div class="reservapro-screen">
+                            <div class="reservapro-nav">
+                                <strong>ReservaPro</strong>
+                                <span>Inicio&nbsp;&nbsp; Nueva cita&nbsp;&nbsp; Ver citas</span>
+                            </div>
+                            <div class="reservapro-main">
+                                <h3>Bienvenido a ReservaPro</h3>
+                                <p>Gestiona tus citas de forma rápida y sencilla</p>
+                                <div class="reservapro-actions">
+                                    <div>
+                                        <b>Nueva cita</b>
+                                        <span>Registra una nueva cita</span>
+                                    </div>
+                                    <div>
+                                        <b>Ver citas</b>
+                                        <span>Consulta por fecha</span>
+                                    </div>
+                                    <div>
+                                        <b>Cancelar cita</b>
+                                        <span>Elimina una cita</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <figcaption>Vista principal de la aplicación web</figcaption>
+                    </figure>
+
+                    <div class="project-details">
+                        <p class="project-name">ReservaPro_CLI/</p>
+                        <p class="project-date">proyecto personal</p>
+                        <h3>ReservaPro — gestión de citas</h3>
+                        <p>Sistema para gestionar citas de peluquerías, consultorios o talleres. Permite crear, consultar por fecha y cancelar reservas; los datos se guardan localmente en JSON.</p>
+                        
+                        <a class="repo-link" href="https://github.com/lAndreV10/ReservaPro_CLI" target="_blank" rel="noopener noreferrer">
+                            <span>$</span> ver repositorio →
+                        </a>
+
+                        <p class="project-tech">Python / Flask / Bootstrap / JSON</p>
+                    </div>
+                </article>
+                <article class="project-showcase">
+                    <figure class="project-preview">
+                        <div class="library-screen">
+                            <div class="library-top">
+                                <strong>my-library</strong>
+                                <span>API REST</span>
+                            </div>
+                            <p class="library-request"><span>GET</span> /books?status=reading</p>
+                            <pre>
+                                <code>{
+                                    <span class="library-key">"data"</span>: [ ... ],
+                                    <span class="library-key">"meta"</span>: {
+                                    <span class="library-key">"page"</span>: 1,
+                                    <span class="library-key">"limit"</span>: 10
+                                    }
+                                }</code>
+                            </pre>
+                        </div>
+                        <figcaption>Consulta de libros con filtros y paginación</figcaption>
+                    </figure>
+
+                    <div class="project-details">
+                        <p class="project-name">my-library/</p>
+                        <p class="project-date">proyecto personal</p>
+                        <h3>My Library — API REST</h3>
+                        <p>API para administrar una biblioteca personal. Permite registrar autores y libros, usar tags, filtrar resultados, consultar estadísticas y conservar el historial de estados de cada libro.</p>
+
+                        <a class="repo-link" href="https://github.com/lAndreV10/my-library" target="_blank" rel="noopener noreferrer">
+                            <span>$</span> ver repositorio →
+                        </a>
+
+                        <p class="project-tech">Node.js / TypeScript / Express / Prisma / PostgreSQL / Zod</p>
+                    </div>
+                </article>
+            </div>
+        
+        </section>
+
     </main>
 </body>
 </html>
