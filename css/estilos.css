@@ -679,3 +679,13 @@ h1 span{
 footer a:hover {
     color: var(--text);
 }
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid var(--border);
+    min-height: 64px;
+    color: var(--muted);
+    font-size: 0.68rem;
+}
