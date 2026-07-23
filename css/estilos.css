@@ -642,3 +642,40 @@ h1 span{
     font-size: 0.78rem;
     line-height: 1.8;
 }
+
+.contact {
+    padding-bottom: 96px;
+}
+
+.contact > p {
+    max-width: 560px;
+    margin-bottom: 28px;
+    color: var(--muted);
+    font-size: 0.82rem;
+    line-height: 1.9;
+}
+
+.email {
+    display: block;
+    width: fit-content;
+    border-bottom: 1px solid rgba(103, 255, 92, 0.4);
+    margin-bottom: 20px;
+    padding-bottom: 3px;
+    color: var(--verde);
+    font-size: clamp(0.88rem, 2vw, 1.05rem);
+}
+
+.contact-links {
+    display: grid;
+    gap: 10px;
+}
+
+.contact-links a {
+    color: var(--muted);
+    font-size: 0.76rem;
+}
+
+.contact-links a:hover,
+footer a:hover {
+    color: var(--text);
+}
