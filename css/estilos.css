@@ -578,3 +578,67 @@ h1 span{
         border-bottom: 1px solid var(--border);
     }
 }
+
+.trajectory {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    overflow: hidden;
+    border: 1px solid var(--border);
+    background: var(--panel);
+}
+
+.trajectory-card {
+    --accent: var(--git-morado);
+    min-height: 238px;
+    border-right: 1px solid var(--border);
+    padding: 20px 18px;
+    transition: background 0.15s;
+}
+
+.trajectory-card:nth-child(2) {
+    --accent: var(--git-amarillo);
+}
+
+.trajectory-card:nth-child(3) {
+    --accent: var(--git-cyan);
+    border: 0;
+}
+
+.trajectory-card:hover {
+    background: var(--panel-hover);
+}
+
+.trajectory-card::before {
+    content: "[" attr(data-step) "]";
+    display: block;
+    width: fit-content;
+    border: 1px solid currentColor;
+    margin-bottom: 22px;
+    padding: 2px 6px;
+    color: var(--accent);
+    font-size: 0.62rem;
+}
+
+.trajectory-path {
+    margin-bottom: 4px;
+    color: var(--accent);
+    font-size: 0.68rem;
+}
+
+.trajectory-card time {
+    display: block;
+    margin-bottom: 16px;
+    color: var(--muted);
+    font-size: 0.63rem;
+}
+
+.trajectory-card h3 {
+    margin-bottom: 9px;
+    font-size: 0.88rem;
+}
+
+.trajectory-card > p:last-child {
+    color: var(--muted);
+    font-size: 0.78rem;
+    line-height: 1.8;
+}
